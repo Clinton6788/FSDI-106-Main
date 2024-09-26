@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide spin buttons in Chrome, Safari, Edge, and other WebKit browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide spin buttons in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/*Header*/
+.header{
+    height: 200px;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+}
+
+
+/*Main*/
+.main-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#list{
+    width: 50%;
+}
+
+#form{
+    width: 50%;
+}
+#form select{
+    width: 100%;
+}

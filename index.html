@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/style.css">
     <title>FSDI 106</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>FSDI 106</h1>
+    </header>
+    <main class="container">
+        <div class="main-flex">
+            <section id="list">
+                Section A: List
+            </section>
+            <section id="form">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtTitle">Title</label>
+                        <input type="text" class="form-control" id="txtTitle" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid title.
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label" for="txtDescription">Description</label>
+                        <textarea rows="3" class="form-control" id="txtDescription" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a description.
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label" for="selColor">Color</label>
+                        <input type="color" class="form-control" id="selColor" required>
+                        <div class="invalid-feedback">
+                            Please specify a color.
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label" for="startDate">Start Date</label>
+                        <input type="datetime-local" class="form-control" id="startDate" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid start date.
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label" for="selStatus">Status</label>
+                        <select class="form-select" id="selStatus" required>
+                            <option value="">---Please Select Option---</option>
+                            <option value="new">New</option>
+                            <option value="inProgress">In-Progress</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a status.
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label" for="numBudget">Budget</label>
+                        <input type="number" class="form-control" id="numBudget" required>
+                        <div class="invalid-feedback">
+                            Please specify the budget.
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./Scripts/index.js"></script>
 </body>
 </html>
