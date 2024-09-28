@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/* Hide spin buttons in Chrome, Safari, Edge, and other WebKit browsers */
+/* Hide spin buttons*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;

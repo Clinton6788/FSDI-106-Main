@@ -17,37 +17,25 @@
                 Section A: List
             </section>
             <section id="form">
-                <form action="" class="needs-validation" novalidate>
+                <form>
                     <div class="mb-3">
                         <label class="form-label" for="txtTitle">Title</label>
                         <input type="text" class="form-control" id="txtTitle" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid title.
-                        </div>
                     </div>
             
                     <div class="mb-3">
                         <label class="form-label" for="txtDescription">Description</label>
                         <textarea rows="3" class="form-control" id="txtDescription" required></textarea>
-                        <div class="invalid-feedback">
-                            Please provide a description.
-                        </div>
                     </div>
             
                     <div class="mb-3">
                         <label class="form-label" for="selColor">Color</label>
                         <input type="color" class="form-control" id="selColor" required>
-                        <div class="invalid-feedback">
-                            Please specify a color.
-                        </div>
                     </div>
             
                     <div class="mb-3">
                         <label class="form-label" for="startDate">Start Date</label>
                         <input type="datetime-local" class="form-control" id="startDate" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid start date.
-                        </div>
                     </div>
             
                     <div class="mb-3">
@@ -58,26 +46,21 @@
                             <option value="inProgress">In-Progress</option>
                             <option value="completed">Completed</option>
                         </select>
-                        <div class="invalid-feedback">
-                            Please provide a status.
-                        </div>
                     </div>
             
                     <div class="mb-3">
                         <label class="form-label" for="numBudget">Budget</label>
                         <input type="number" class="form-control" id="numBudget" required>
-                        <div class="invalid-feedback">
-                            Please specify the budget.
-                        </div>
                     </div>
             
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button id="btnSave" class="btn btn-secondary">Save Task</button>
                 </form>
             </section>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/task.js"></script>
+    <script src="./Scripts/app.js"></script>
 </body>
 </html>
