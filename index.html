@@ -9,14 +9,16 @@
 </head>
 <body>
     <header class="header">
-        <h1>FSDI 106</h1>
+        <h1>Task Manager</h1>
     </header>
     <main class="container">
         <div class="main-flex">
-            <section id="list">
-                Section A: List
+            <section id="list" class="overflow-auto">
+                <h2 class="mb-4 text-center">Current Tasks:</h2>
             </section>
+
             <section id="form">
+                <h2 class="mb-4 text-center" >Add new task:</h2>
                 <form>
                     <div class="mb-3">
                         <label class="form-label" for="txtTitle">Title</label>
@@ -42,9 +44,9 @@
                         <label class="form-label" for="selStatus">Status</label>
                         <select class="form-select" id="selStatus" required>
                             <option value="">---Please Select Option---</option>
-                            <option value="new">New</option>
-                            <option value="inProgress">In-Progress</option>
-                            <option value="completed">Completed</option>
+                            <option value="New">New</option>
+                            <option value="In-Progress">In-Progress</option>
+                            <option value="Completed">Completed</option>
                         </select>
                     </div>
             

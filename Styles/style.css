@@ -26,17 +26,84 @@ input[type="number"] {
 
 /*Main*/
 .main-flex{
+    padding-top: 20px;
+    min-height: 100vh-100px;
     display: flex;
     justify-content: space-evenly;
 }
 
 #list{
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 10px;
+    box-shadow: rgba(114, 114, 114, 0.123) 0px 5px 15px;
     width: 50%;
+    padding: 20px;
+    margin-right: 20px;
 }
 
 #form{
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 50%;
+    padding: 20px;
 }
 #form select{
     width: 100%;
+}
+
+.task-container{
+    margin: 15px 0px;
+    padding: 8px;
+    border-left: 4px solid #e0e0e0;
+    border-right: 4px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 2px 4px rgba(179, 179, 179, 0.5));
+    transition: all 0.3s ease;
+}
+
+.task-container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.527);
+}
+
+.task{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .info{
+    flex: 3;
+}
+
+.task .info h5{
+    color: #1e90ff;
+    font-size: 18px;
+}
+
+.task .info p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.task .status{
+    background-color: #e6f2ff;
+    color: #1e90ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.date-budget{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    color: #c7c7c7;
+    
 }
